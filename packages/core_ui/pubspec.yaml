@@ -10,7 +10,10 @@ dependencies:
   flutter:
     sdk: flutter
   core_domain:
-    path: ../core_domain
+    git: 
+      url: https://github.com/precastapp/core.git
+      path: packages/core_domain
+      ref: main
 
 dev_dependencies:
   lints: ^2.0.0
