@@ -1,0 +1,17 @@
+name: core_ui
+description: the core base for other modules.
+version: 1.0.0
+# homepage: https://www.example.com
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  core_domain:
+    path: ../core_domain
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.16.0
