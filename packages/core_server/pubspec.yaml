@@ -14,7 +14,7 @@ dependencies:
     git:
       url: https://github.com/d3roch4/oauth2.git
       ref: master
-  domain_core:
+  core_domain:
     git: 
       url: https://github.com/precastapp/core_module.git
       path: packages/core_domain

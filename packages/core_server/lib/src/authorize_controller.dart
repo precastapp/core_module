@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:jose/jose.dart';
 import 'package:shelf/shelf.dart';
-import 'package:domain_core/domain_core.dart';
+import 'package:core_domain/core_domain.dart';
 import 'package:http/http.dart' as http;
 
 class AuthorizeController {
@@ -17,8 +17,8 @@ class AuthorizeController {
             return Response(401, body: 'Authorization header not found');
 
           final token = authorizationHeader
-            .substring(authorizationHeader.indexOf(' '))
-            .trim();
+              .substring(authorizationHeader.indexOf(' '))
+              .trim();
 
           if (token.isEmpty)
             return Response(401, body: 'Authorization token is empty');
