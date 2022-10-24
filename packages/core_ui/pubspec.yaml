@@ -9,11 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  core_domain:
-    git: 
-      url: https://github.com/precastapp/core_module.git
-      path: packages/core_domain
-      ref: main
+  core_domain:      
+    path: ../core_domain
+
 
 dev_dependencies:
   lints: ^2.0.0

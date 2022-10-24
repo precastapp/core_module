@@ -7,3 +7,5 @@ export 'src/entities/address.dart';
 
 export 'src/events/domain_event.dart';
 export 'src/events/domain_event_service.dart';
+
+export 'src/helpers/entity_json.dart';

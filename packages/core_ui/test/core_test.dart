@@ -8,7 +8,9 @@ void main() {
     });
 
     test('First Test', () {
-      expect(false, isTrue);
+      var entity = Entity()..id = 'asdf';
+      var json = entity.toJson();
+      expect(entity.createdAt, json['createdAt']);
     });
   });
 }
