@@ -10,6 +10,7 @@ void main() {
     test('First Test', () {
       var entity = Entity()..id = 'asdf';
       var json = entity.toJson();
+      entity = EntityJson.fromJson(json, entity);
       expect(entity.createdAt, json['createdAt']);
     });
   });
